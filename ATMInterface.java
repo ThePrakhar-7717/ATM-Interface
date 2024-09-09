@@ -150,7 +150,7 @@ class BankAccount{
         }
 
         public static void main(String[] args) {
-            System.out.println("\n********************WELCOME TO GOVARDHAN ATM INTERFACE*******************");
+            System.out.println("\n********************WELCOME TO ATM INTERFACE*******************");
             System.out.println("\n1.Register \n2.Exit");
             System.out.println("Choose one option: ");
             int choose = takenIntegerInput(2);
@@ -164,7 +164,7 @@ class BankAccount{
                     int ch = takenIntegerInput(2);
                     if(ch==1) {
                         if(b.login()) {
-                            System.out.println("\n********************WELCOME BACK"+b.name +"*******************");
+                            System.out.println("\n******************** WELCOME BACK "+b.name +" *******************");
                             boolean isFinished = false;
                             while(!isFinished) {
                                 System.out.println("\n1.withdraw \n2.Deposit \n3.Transfer \n4.check balance \n5.Transaction History \n6.Exit");
